@@ -1,16 +1,95 @@
-# React + Vite
+SmartAgro Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern React app for managing SmartAgro Categories, Products, and Orders.
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Professional navigation bar
 
-## React Compiler
+Pages for:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dashboard
 
-## Expanding the ESLint configuration
+Categories (Add, View, Update, Delete)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Products (Add, View, Update, Delete)
+
+Orders (Add, View, Update, Delete)
+
+Reusable forms
+
+CSS separated per page
+
+Fully connected to backend via Axios
+
+## Installation
+1️⃣ Install dependencies
+npm install
+
+2️⃣ Run the frontend
+npm run dev
+
+3️⃣ Frontend will run at:
+
+ http://localhost:5173
+
+ ## Project Structure
+frontend/
+│── src/
+│   ├── components/
+│   │   └── Navbar.jsx
+│   ├── pages/
+│   │   ├── DashboardPage.jsx
+│   │   ├── CategoriesPage.jsx
+│   │   ├── ProductsPage.jsx
+│   │   └── OrdersPage.jsx
+│   ├── styles/
+│   │   ├── Categories.css
+│   │   ├── Products.css
+│   │   ├── Orders.css
+│   │   └── Form.css
+│   └── App.jsx
+│── package.json
+
+ API Base URL
+
+Configured inside Axios calls:
+
+http://localhost:5000
+
+ Backend Connection
+
+Each page uses Axios like:
+
+axios.get("http://localhost:5000/categories");
+axios.post("http://localhost:5000/products");
+axios.delete("http://localhost:5000/orders/123");
+
+## UI Overview
+
+Navigation bar at top
+
+CRUD tables for Categories, Products, Orders
+
+Forms for adding new items
+
+Edit/Delete buttons included inside tables
+
+ Technologies Used
+
+React + Vite
+
+Axios
+
+React Router
+
+CSS
+
+## Start the whole system
+Start backend:
+cd backend
+npm run dev
+
+Start frontend:
+cd frontend
+npm run dev
