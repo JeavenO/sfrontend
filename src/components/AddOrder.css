@@ -1,0 +1,12 @@
+@import "./AddCategory.css";
+
+.item-box {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.item-box select,
+.item-box input {
+  flex: 1;
+}

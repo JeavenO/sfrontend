@@ -1,0 +1,39 @@
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 5px solid #2e7d32;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+label {
+  font-weight: bold;
+  margin-top: 15px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

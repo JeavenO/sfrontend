@@ -1,0 +1,26 @@
+.categories-page {
+    padding: 20px;
+}
+
+.add-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categories-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.categories-table th,
+.categories-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    padding: 6px 12px;
+    margin-right: 6px;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.page-container {
+  padding: 40px;
+  background: #eef9ee;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 28px;
+  color: #256029;
+  margin-bottom: 5px;
+}
+
+.page-subtitle {
+  color: #4d724d;
+  margin-bottom: 25px;
+}
+
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table thead {
+  background: #2e7d32;
+  color: white;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tr:nth-child(even) {
+  background: #f3fef3;
+}
+
+.btn-edit {
+  background: #1976d2;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.btn-delete {
+  background: #d32f2f;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+}
